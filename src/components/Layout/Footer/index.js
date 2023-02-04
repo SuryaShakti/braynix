@@ -174,11 +174,11 @@ const Footer = () => {
         Footer
       </h2>
       <div className="max-w-md mx-auto pt-12 px-4 sm:max-w-7xl sm:px-6 lg:pt-16 lg:px-8">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+        <div className="md:grid md:grid-cols-3 md:gap-8">
           <div className="space-y-8 xl:col-span-1">
             <img
               className="h-10"
-              src="https://tailwindui.com/img/logos/workflow-mark-gray-300.svg"
+              src="/images/Logo.svg"
               alt="Company name"
             />
             <p className="text-gray-500 text-base">
