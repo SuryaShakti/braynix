@@ -114,8 +114,7 @@ const ContactSection = () => {
                 Contact information
               </h3>
               <p className="mt-6 text-base text-indigo-50 max-w-3xl">
-                Nullam risus blandit ac aliquam justo ipsum. Quam mauris
-                volutpat massa dictumst amet. Sapien tortor lacus arcu.
+                Plot no-258/1061, Mahadev nagar, Jharapada, Bhubaneswar-751006.
               </p>
               <dl className="mt-8 space-y-6">
                 <dt>
@@ -126,7 +125,7 @@ const ContactSection = () => {
                     className="flex-shrink-0 w-6 h-6 text-indigo-200"
                     aria-hidden="true"
                   />
-                  <span className="ml-3">+1 (555) 123-4567</span>
+                  <span className="ml-3">+91 8249262771</span>
                 </dd>
                 <dt>
                   <span className="sr-only">Email</span>
@@ -136,10 +135,10 @@ const ContactSection = () => {
                     className="flex-shrink-0 w-6 h-6 text-indigo-200"
                     aria-hidden="true"
                   />
-                  <span className="ml-3">support@workcation.com</span>
+                  <span className="ml-3">operations@braynixai.com</span>
                 </dd>
               </dl>
-              <ul role="list" className="mt-8 flex space-x-12">
+              {/* <ul role="list" className="mt-8 flex space-x-12">
                 <li>
                   <a className="text-indigo-200 hover:text-indigo-100" href="#">
                     <span className="sr-only">Facebook</span>
@@ -197,7 +196,7 @@ const ContactSection = () => {
                     </svg>
                   </a>
                 </li>
-              </ul>
+              </ul> */}
             </div>
 
             {/* Contact form */}
