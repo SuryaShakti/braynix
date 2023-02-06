@@ -177,8 +177,8 @@ const Footer = () => {
         <div className="md:grid md:grid-cols-3 md:gap-8">
           <div className="space-y-8 xl:col-span-1">
             <img
-              className="h-10"
-              src="/images/Logo.svg"
+              className="h-16"
+              src="/images/logowhite.png"
               alt="Company name"
             />
             <p className="text-gray-500 text-base">

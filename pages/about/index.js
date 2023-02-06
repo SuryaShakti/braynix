@@ -6,6 +6,7 @@ import {
   CogIcon,
   DesktopComputerIcon,
   DeviceMobileIcon,
+  GlobeIcon,
   InboxIcon,
   LockClosedIcon,
   MailIcon,
@@ -27,22 +28,22 @@ const people = [
     twitterUrl: "#",
     linkedinUrl: "#",
   },
-  {
-    name: "Leonard Krasner",
-    role: "Senior Designer",
-    imageUrl:
-      "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    twitterUrl: "#",
-    linkedinUrl: "#",
-  },
-  {
-    name: "Leonard Krasner",
-    role: "Senior Designer",
-    imageUrl:
-      "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    twitterUrl: "#",
-    linkedinUrl: "#",
-  }
+  // {
+  //   name: "Leonard Krasner",
+  //   role: "Senior Designer",
+  //   imageUrl:
+  //     "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+  //   twitterUrl: "#",
+  //   linkedinUrl: "#",
+  // },
+  // {
+  //   name: "Leonard Krasner",
+  //   role: "Senior Designer",
+  //   imageUrl:
+  //     "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+  //   twitterUrl: "#",
+  //   linkedinUrl: "#",
+  // }
   // More people...
 ];
 
@@ -53,18 +54,18 @@ const index = () => {
         <div className="mx-auto px-4 text-center sm:px-6 lg:px-8 lg:max-w-7xl">
           <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h2 className="text-base font-semibold text-white tracking-wide uppercase">
+              {/* <h2 className="text-base font-semibold text-white tracking-wide uppercase">
                 About Us
-              </h2>
+              </h2> */}
               <p className="mt-1 text-4xl font-extrabold   bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 sm:text-5xl sm:tracking-tight lg:text-6xl">
                 Who are we?
               </p>
-              <p className="max-w-3xl mt-5 mx-auto text-xl text-gray-50">
-                Magna exercitation ullamco est laborum commodo deserunt ullamco
-                officia in. Exercitation ut qui ex amet excepteur Lorem ad
-                laboris. Minim labore non cupidatat eiusmod laborum duis
-                reprehenderit ipsum. Id eiusmod tempor consectetur reprehenderit
-                mollit non adipisicing sunt consequat consequat ad.
+              <p className="max-w-3xl mt-5 mx-auto text-2xl text-gray-50">
+                A team with a difference because we have a dream with a
+                difference.
+              </p>
+              <p className="max-w-3xl italic mt-12 mx-auto text-3xl font-bold text-gray-50">
+                "One Team! One Dream!"
               </p>
             </div>
           </div>
@@ -163,17 +164,17 @@ const index = () => {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-teal-500 to-cyan-600">
+        <div className="bg-gradient-to-r from-gray-900 ">
           <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
             <div className="space-y-12">
               <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
                 <h2 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
-                  Meet our team
+                  Founder's Note
                 </h2>
-                <p className="text-xl text-gray-300">
+                {/* <p className="text-xl text-gray-300">
                   Ornare sagittis, suspendisse in hendrerit quis. Sed dui
                   aliquet lectus sit pretium egestas vel mattis neque.
-                </p>
+                </p> */}
               </div>
               <ul
                 role="list"
@@ -182,46 +183,43 @@ const index = () => {
                 {people.map((person) => (
                   <li
                     key={person.name}
-                    className="py-10 px-6 shadow-xl hover:scale-105 transition duration-200 hover:-translate-y-2 bg-white bg-opacity-20 text-center rounded-lg xl:px-10 xl:text-left"
+                    className="  bg-transparent text-center rounded-lg xl:text-left"
                   >
-                    <div className="space-y-6 xl:space-y-10">
+                    <div className="">
                       <img
-                        className="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
-                        src={person.imageUrl}
+                        className=" w-[18rem] rounded-full h-[16rem]"
+                        src="/images/founder.png"
                         alt=""
                       />
-                      <div className="space-y-2 xl:flex xl:items-center xl:justify-between">
+                      <div className="space-y-2 mt-2 text-center xl:flex flex-col w-[18rem] xl:items-center xl:justify-between">
                         <div className="font-medium text-lg leading-6 space-y-1">
-                          <h3 className="text-white">{person.name}</h3>
-                          <p className="text-sm text-white">{person.role}</p>
+                          <h3 className="text-2xl text-white whitespace-nowrap">
+                            Amitabh Das
+                          </h3>
+                          <p className="text-sm text-white">Founder & CEO</p>
                         </div>
 
                         <ul
                           role="list"
-                          className="flex justify-center space-x-5"
+                          className="flex justify-center space-x-5 "
                         >
                           <li>
                             <a
-                              href={person.twitterUrl}
+                              target="_blank"
+                              href={"https://amitabhdas.co.in/"}
                               className="text-white hover:text-gray-100"
                             >
-                              <span className="sr-only">Twitter</span>
-                              <svg
-                                className="w-5 h-5"
-                                aria-hidden="true"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                              >
-                                <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
-                              </svg>
+                              <GlobeIcon className="w-5 h-5 text-white hover:text-gray-100" />
                             </a>
                           </li>
                           <li>
                             <a
-                              href={person.linkedinUrl}
+                              href={
+                                "http://www.linkedin.com/in/amitabh-das-2602"
+                              }
+                              target="_blank"
                               className="text-white hover:text-gray-100"
                             >
-                              <span className="sr-only">LinkedIn</span>
                               <svg
                                 className="w-5 h-5"
                                 aria-hidden="true"
@@ -241,6 +239,35 @@ const index = () => {
                     </div>
                   </li>
                 ))}
+                <div className="lg:col-span-2 text-left text-lg md:text-2xl text-white">
+                  {/* <svg
+                    className="h-12 w-12 text-white opacity-25"
+                    fill="currentColor"
+                    viewBox="0 0 32 32"
+                    aria-hidden="true"
+                  >
+                    <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                  </svg> */}
+                  "As the founder of Braynix AI, I am proud to lead a team of
+                  talented individuals who are dedicated to using cutting-edge
+                  artificial intelligence technologies to solve real-world
+                  problems. Our mission is to empower businesses and
+                  organizations with the tools they need to improve their
+                  operations and achieve their goals. Whether you need to
+                  automate processes, gain new insights, or develop custom
+                  solutions, Braynix AI is here to help you succeed. I believe
+                  that the future is AI, and I am confident that our team will
+                  continue to play a major role in shaping that future for the
+                  better."{" "}
+                  {/* <svg
+                  className="h-12 w-12 text-white opacity-25 rotate-180"
+                  fill="currentColor"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                >
+                  <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                </svg> */}
+                </div>
               </ul>
             </div>
           </div>
