@@ -420,19 +420,21 @@ export default function Example() {
             </div>
             <div className="relative mx-auto max-w-md px-4 py-12 sm:max-w-7xl sm:px-6 sm:py-20 md:py-28 lg:px-8 lg:py-32">
               <div className="md:ml-auto md:w-1/2 md:pl-10">
-                <h2 className="text-base font-semibold uppercase tracking-wider text-gray-300">
+                {/* <h2 className="text-base font-semibold uppercase tracking-wider text-gray-300">
                   Award winning support
-                </h2>
-                <p className="mt-2 text-white text-3xl font-extrabold tracking-tight sm:text-4xl">
-                  We’re here to help
+                </h2> */}
+                <p className="mt-2 whitespace-nowrap text-white text-3xl font-extrabold tracking-tight sm:text-4xl">
+                  Get in touch and we will help you.
                 </p>
                 <p className="mt-3 text-lg text-gray-300">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
-                  egestas tempus tellus etiam sed. Quam a scelerisque amet
-                  ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat
-                  quisque ut interdum tincidunt duis.
+                  At BraynixAI, we prioritize our customers' needs and
+                  goals. Our process begins with understanding your
+                  requirements, followed by consultation to ensure the right
+                  solution is tailored for you. Our team of experts then builds
+                  and deploys the solution efficiently, while providing ongoing
+                  support.
                 </p>
-                <div className="mt-8">
+                {/* <div className="mt-8">
                   <div className="inline-flex rounded-md shadow">
                     <a
                       href="#"
@@ -445,7 +447,7 @@ export default function Example() {
                       />
                     </a>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
